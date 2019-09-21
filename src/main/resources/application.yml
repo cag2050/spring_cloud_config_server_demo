@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+#          写上自己的仓库
+          uri: https://github.com/cag2050/spring_cloud_config_repository
+          search-paths: config-repo
+          username:
+          password:
